@@ -10,10 +10,10 @@ SMTP_USERNAME = 'Your Email'
 SMTP_PASSWORD = 'Password'
 
 # Read in CSV file containing recipient information
-recipients_df = pd.read_csv('D:\Code\Automate email\mails.csv')
+recipients_df = pd.read_csv('mails.csv')
 
 # Read in email body from a text file
-with open('D:\Code\Automate email\email_body.txt', 'r') as f:
+with open('email_body.txt', 'r') as f:
     email_body = f.read()
 
 # Loop through each recipient and send an email
